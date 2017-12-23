@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Image, Segment, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 
@@ -12,15 +12,18 @@ export default class BaseHeader extends Component {
         const { activeItem } = this.state;
 
         return (
-            <Menu stackable inverted pointing size=''>
-                <Link to='/'><Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}>
-                    <img src={require('../assets/AquilaeLogo.png')} />
-                </Menu.Item></Link>
+            <Segment inverted>
+                <Menu stackable inverted>
+                    <Menu.Item header as={Link} to='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} >
+                        <Image src={require('../assets/AquilaeLogo.png')} size='mini' circular />
+                        Aquilae Co.
+                    </Menu.Item>
+                    <Menu.Item as={Link} to='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='home' />Home</Menu.Item>
+                    <Menu.Item as={Link} to='/about' name='about' active={activeItem === 'about'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='newspaper' />About</Menu.Item>
+                    <Menu.Item as={Link} to='/videos' name='videos' active={activeItem === 'videos'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='video' />Videos</Menu.Item>
 
-                <Link to='/'><Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}>Home</Menu.Item></Link>
-                <Link to='/about'><Menu.Item name='about' active={activeItem === 'about'} onClick={this.handleItemClick}>About</Menu.Item></Link>
-                <Link to='/videos'><Menu.Item name='videos' active={activeItem === 'videos'} onClick={this.handleItemClick}>Videos</Menu.Item></Link>
-            </Menu>
+                </Menu>
+            </Segment>
         )
     }
 }

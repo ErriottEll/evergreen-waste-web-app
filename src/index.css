@@ -3,3 +3,20 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.landing-title-text {
+  font-size: 3rem;
+  margin: 100px 10px 10px 10px;
+}
+
+.landing-paragraph {
+  font-size: 14px;
+}
+
+.landing-page-background {
+  background-color: rgb(15, 218, 201);
+}
+
+.landing-page-button {
+  margin: 100px 100px 100px 100px;
+}
