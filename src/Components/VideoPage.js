@@ -5,10 +5,10 @@ export default class VideoPage extends Component {
     render() {
         return (
             <div>
-                <Grid relaxed stackable columns={1}>
+                <Grid relaxed stackable columns={3}>
                     <Grid.Column stretched>
                         <Segment color='black'>
-                            <Modal trigger={<Card color='teal' header='Acrobatics/Cinematography Trailer 1' image={require('../assets/AquilaeTitle.png')} />} closeIcon closeOnDimmerClick closeOnEscape>
+                            <Modal trigger={<Card fluid color='teal' header='Acrobatics/Cinematography Trailer 1' image={require('../assets/AquilaeTitle.png')} />} closeIcon closeOnDimmerClick closeOnEscape>
                                 <Modal.Header>Acrobatics/Cinematography Trailer 1</Modal.Header>
                                 <Modal.Content>
                                     <Embed
@@ -23,7 +23,7 @@ export default class VideoPage extends Component {
 
                     <Grid.Column stretched>
                         <Segment color='black'>
-                            <Modal trigger={<Card color='teal' header='CSW Force 5K 2017' image={require('../assets/AquilaeTitle.png')} />} closeIcon closeOnDimmerClick closeOnEscape>
+                            <Modal trigger={<Card fluid color='teal' header='CSW Force 5K 2017' image={require('../assets/AquilaeTitle.png')} />} closeIcon closeOnDimmerClick closeOnEscape>
                                 <Modal.Header>CSW Force 5K 2017</Modal.Header>
                                 <Modal.Content>
                                     <Embed
@@ -38,7 +38,7 @@ export default class VideoPage extends Component {
 
                     <Grid.Column stretched>
                         <Segment color='black'>
-                            <Modal trigger={<Card color='teal' header='Project Benzene Preview 1 | CSW Official Trailer' image={require('../assets/AquilaeTitle.png')} />} closeIcon closeOnDimmerClick closeOnEscape>
+                            <Modal trigger={<Card fluid color='teal' header='Project Benzene Preview 1 | CSW Official Trailer' image={require('../assets/AquilaeTitle.png')} />} closeIcon closeOnDimmerClick closeOnEscape>
                                 <Modal.Header>Project Benzene Preview 1 | The Charter School of Wilmington CSW Official Trailer</Modal.Header>
                                 <Modal.Content>
                                     <Embed
