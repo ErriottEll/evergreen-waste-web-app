@@ -6,7 +6,7 @@ body {
 
 .landing-title-text {
   font-size: 3rem;
-  margin: 100px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 .landing-paragraph {
@@ -14,9 +14,37 @@ body {
 }
 
 .landing-page-background {
-  background-color: rgb(15, 218, 201);
+  background-color: #1DCB8B;
+  /* background-image: url("assets/EditedWilmingtonShot.jpg"); */
+  padding: 100px;
+  margin-top: 0px;
+  
 }
 
 .landing-page-button {
   margin: 100px 100px 100px 100px;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.footer-content {
+  background-color: rgb(27, 28, 29);  
+  color: white;
+}
+
+.menu-segment {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.siteTeal{
+  background-color: #1DCB8B;
 }

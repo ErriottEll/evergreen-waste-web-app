@@ -6,6 +6,7 @@ import '../index.css';
 export default class HomePage extends Component {
     render() {
         return (
+            <div>
             <div className='landing-page-background'>
                 <Header as='h1' icon textAlign='center'>
                     <Image src={require('../assets/AquilaeC3.png')} circular />
@@ -18,7 +19,7 @@ export default class HomePage extends Component {
                         <Button animated color='grey' as={Link} to='/about'>
                             <Button.Content visible>Read more</Button.Content>
                             <Button.Content hidden>
-                                <Icon name='newspaper' />
+                            <Icon circular name='newspaper' />
                             </Button.Content>
                         </Button>
                         <Button.Or/>
@@ -30,6 +31,8 @@ export default class HomePage extends Component {
                         </Button>
                     </Button.Group>
                 </Header>
+                </div>
+                <Image fluid src={require('../assets/EditedWilmingtonShot.jpg')} />
             </div>
         )
     }
