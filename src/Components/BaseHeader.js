@@ -14,7 +14,7 @@ export default class BaseHeader extends Component {
         return (
             <Segment inverted className='menu-segment'>
                 <Menu stackable inverted className='menu-segment'>
-                    <Menu.Item header as={Link} to='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} >
+                    <Menu.Item header as={Link} to='/aquilae-website' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} >
                         <Image src={require('../assets/AquilaeC3.png')} size='mini' circular />
                         &nbsp;Aquilae Co.
                     </Menu.Item>
