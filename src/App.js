@@ -23,7 +23,7 @@ class App extends Component {
           <BaseHeader />
           <div className="Site-content">
             <Switch>
-              <Route exact path="/" component={HomePage} />
+              <Route exact path="/aquilae-website" component={HomePage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/videos" component={VideoPage} />
               <Route component='NotFound' />
