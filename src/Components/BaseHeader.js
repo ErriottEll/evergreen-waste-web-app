@@ -18,7 +18,8 @@ export default class BaseHeader extends Component {
                         <Image src={require('../assets/AquilaeC3.png')} size='mini' circular />
                         &nbsp;Aquilae Co.
                     </Menu.Item>
-                    <Menu.Item as={Link} to='/' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} className="siteTeal"><Icon circular inverted color='teal' name='home' />Home</Menu.Item>
+                    {/* {We have to link to aquilae-website here because of github pages navigation and react router not quite working right or something like that} */}
+                    <Menu.Item as={Link} to='/aquilae-website' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} className="siteTeal"><Icon circular inverted color='teal' name='home' />Home</Menu.Item>
                     <Menu.Item as={Link} to='/about' name='about' active={activeItem === 'about'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='newspaper' />About</Menu.Item>
                     <Menu.Item as={Link} to='/videos' name='videos' active={activeItem === 'videos'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='video' />Videos</Menu.Item>
 
