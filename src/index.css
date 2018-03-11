@@ -4,22 +4,36 @@ body {
   font-family: sans-serif;
 }
 
+.changedMargins {
+  margin: 0px;
+  padding: 0px;
+}
+
 .landing-title-text {
   font-size: 3rem;
   margin: 10px 10px 10px 10px;
 }
 
+
 .landing-paragraph {
   font-size: 14px;
 }
 
+.landing-page-background-specific {
+  /* background-image: url("assets/EditedWilmingtonShot.jpg"); */
+   padding-top: 100px;
+}
+
 .landing-page-background {
   background-color: #1DCB8B;
-  /* background-image: url("assets/EditedWilmingtonShot.jpg"); */
-  padding: 100px;
-  margin-top: 0px;
-  
 }
+
+.landing-page-background-pic {
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+  background-color: #1DCB8B;
+}
+
 
 .landing-page-button {
   margin: 100px 100px 100px 100px;
@@ -47,4 +61,8 @@ body {
 
 .siteTeal{
   background-color: #1DCB8B;
+}
+
+.mrg{
+  margin: 50%;
 }
