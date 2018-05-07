@@ -49,7 +49,7 @@ export default class AccordionExampleStyled extends Component {
                 </Accordion.Title>
                 <Accordion.Content active={activeIndex === 3}>
                     <p>Typically, once filming is completed, videos are edited and ready to be deployed within about 2 weeks. 
-                        If we are filming a non-event based video, filming takes an average of 1-2 days. These figures will on a project-to-project basis</p>
+                        If we are filming a non-event based video, filming takes an average of 1-2 days. These figures will vary on a project-to-project basis</p>
                 </Accordion.Content>
             </Accordion>
         )
