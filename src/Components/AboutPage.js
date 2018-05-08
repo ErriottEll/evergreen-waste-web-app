@@ -9,7 +9,7 @@ export default class AboutPage extends Component {
             <div>
                 {/* <Divider horizontal>Or another format</Divider> */}
                 <Container text>
-                    <Header as='h1'>About Aquilae Co.</Header>
+                    <Header as='h1'>About Evergreen</Header>
                     <AccordionAbout />
                 </Container>
             </div>

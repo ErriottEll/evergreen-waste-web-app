@@ -14,12 +14,12 @@ export default class BaseHeader extends Component {
         return (
             <Segment inverted className='menu-segment'>
                 <Menu stackable inverted className='menu-segment'>
-                    <Menu.Item header as={Link} to='/aquilae-website' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} >
-                        <Image src={require('../assets/AquilaeC3.png')} size='mini' circular />
-                        &nbsp;Aquilae Co.
+                    <Menu.Item header as={Link} to='/evergreen-waste-web-app' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} >
+                        <Image src={require('../assets/reclogo.png')} size='mini' circular />
+                        &nbsp;Evergreen Waste Services
                     </Menu.Item>
-                    {/* {We have to link to aquilae-website here because of github pages navigation and react router not quite working right or something like that} */}
-                    <Menu.Item as={Link} to='/aquilae-website' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} className="siteTeal"><Icon circular inverted color='teal' name='home' />Home</Menu.Item>
+                    {/* {We have to link to evergreen-waste-web-app here because of github pages navigation and react router not quite working right or something like that} */}
+                    <Menu.Item as={Link} to='/evergreen-waste-web-app' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} className="siteTeal"><Icon circular inverted color='teal' name='home' />Home</Menu.Item>
                     <Menu.Item as={Link} to='/about' name='about' active={activeItem === 'about'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='newspaper' />About</Menu.Item>
                     <Menu.Item as={Link} to='/videos' name='videos' active={activeItem === 'videos'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='video' />Videos</Menu.Item>
 

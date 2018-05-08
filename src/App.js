@@ -25,7 +25,7 @@ class App extends Component {
             <Switch>
               {/* {We have to link to aquilae-website here because of github pages navigation and react router not quite working right or something like that, 
               see https://github.com/rafrex/spa-github-pages to fix with a workaround some other post detailed}  CHANGE BACK AFTER MOVING TO A REAL HOST!!!!!!!!!!!!!!!!*/}
-              <Route exact path="/aquilae-website" component={HomePage} />
+              <Route exact path="/evergreen-waste-web-app" component={HomePage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/videos" component={VideoPage} />
               <Route component='NotFound' />

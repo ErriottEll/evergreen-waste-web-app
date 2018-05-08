@@ -10,9 +10,9 @@ export default class HomePage extends Component {
             <div className="landing-page-background">
                 <Header as='h1' icon textAlign='center'>
                     <div className="landing-page-background-specific" />
-                    <Image src={require('../assets/AquilaeC3.png')} circular />
+                    <Image src={require('../assets/reclogo.png')} circular />
                     <Header.Content className='landing-title-text'>
-                        Aquilae Co.
+                        Evergreen Waste Services
                     </Header.Content>
                     <Header as='h3' textAlign='center'><em>"Reinventing promotion"</em></Header>
                     <p className='landing-paragraph'>We create and produce professional-grade promotional materials utilizing only the finest equipment, all under competitive pricing.</p>
@@ -38,7 +38,7 @@ export default class HomePage extends Component {
                 <div className="landing-page-background-pic" />
                 </div>
         
-                <Image fluid src={require('../assets/EditedWilmingtonShot.jpg')} />
+                <Image fluid src={require('../assets/egmod1.jpg')} />
             </div>
         )
     }
