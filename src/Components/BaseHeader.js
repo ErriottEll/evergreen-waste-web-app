@@ -19,10 +19,10 @@ export default class BaseHeader extends Component {
                         &nbsp;Evergreen Waste Services
                     </Menu.Item>
                     {/* {We have to link to evergreen-waste-web-app here because of github pages navigation and react router not quite working right or something like that} */}
-                    <Menu.Item as={Link} to='/evergreen-waste-web-app' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} className="siteTeal"><Icon circular inverted color='teal' name='home' />Home</Menu.Item>
-                    <Menu.Item as={Link} to='/about' name='about' active={activeItem === 'about'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='newspaper' />About</Menu.Item>
-                    <Menu.Item as={Link} to='/videos' name='videos' active={activeItem === 'videos'} onClick={this.handleItemClick}><Icon circular inverted color='teal' name='video' />Videos</Menu.Item>
-
+                    <Menu.Item as={Link} to='/evergreen-waste-web-app' name='home' active={activeItem === 'home'} onClick={this.handleItemClick} className="siteTeal"><Icon circular inverted color='green' name='home' />Home</Menu.Item>
+                    <Menu.Item as={Link} to='/about' name='about' active={activeItem === 'about'} onClick={this.handleItemClick}><Icon circular inverted color='green' name='newspaper' />About</Menu.Item>
+                    <Menu.Item as={Link} to='/videos' name='videos' active={activeItem === 'videos'} onClick={this.handleItemClick}><Icon circular inverted color='green' name='video' />Videos</Menu.Item>
+                    <Menu.Item as={Link} to='/schedule' name='schedule' active={activeItem === 'schedule'} onClick={this.handleItemClick}><Icon circular inverted color='green' name='calendar' />Schedule</Menu.Item>
                 </Menu>
             </Segment>
         )

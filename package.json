@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "http://ErriottEll.github.io/aquilae-website",
   "dependencies": {
+    "moment": "^2.22.1",
     "react": "^16.2.0",
+    "react-big-calendar": "^0.19.1",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",

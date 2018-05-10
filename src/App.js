@@ -13,6 +13,7 @@ import HomePage from './Components/HomePage.js';
 import AboutPage from './Components/AboutPage.js';
 import VideoPage from './Components/VideoPage.js';
 import NotFound from './Components/NotFound';
+import SchedulePage from './Components/SchedulePage';
 
 
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
               <Route exact path="/evergreen-waste-web-app" component={HomePage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/videos" component={VideoPage} />
+              <Route path="/schedule" component={SchedulePage} />
               <Route component='NotFound' />
             </Switch>
           </div>

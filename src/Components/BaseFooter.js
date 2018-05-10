@@ -9,10 +9,10 @@ export default class BaseFooter extends Component {
                     <Header as='h3' inverted>Contact Information</Header>
                     <Grid columns={2} centered>
                         <Grid.Row>
-                            <div><Icon name='mail' />Email: <a href="mailto:aquilaecompany@gmail.com">aquilaecompany@gmail.com</a></div>
+                            <div><Icon name='mail' />Email: <a href="mailto:">something@some.thing</a></div>
                         </Grid.Row>
                         <Grid.Row>
-                            <div><Icon name='instagram' />Instagram Account: <a href="https://www.instagram.com/aquilae.co">Aquilae co.</a></div>
+                            <div><Icon name='facebook' />FaceBook Account: <a href="">Some account</a></div>
                         </Grid.Row>
                     </Grid>
                 </Container>

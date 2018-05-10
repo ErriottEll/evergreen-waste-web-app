@@ -1,9 +1,9 @@
 {
-  "short_name": "Aquilae Co.",
-  "name": "Aquilae Corporation Website",
+  "short_name": "Evergreen Waste Services",
+  "name": "Evergreen Waste Services Website",
   "icons": [
     {
-      "src": "AquilaeC3.ico",
+      "src": "reclogo.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

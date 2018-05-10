@@ -14,8 +14,8 @@ export default class HomePage extends Component {
                     <Header.Content className='landing-title-text'>
                         Evergreen Waste Services
                     </Header.Content>
-                    <Header as='h3' textAlign='center'><em>"Reinventing promotion"</em></Header>
-                    <p className='landing-paragraph'>We create and produce professional-grade promotional materials utilizing only the finest equipment, all under competitive pricing.</p>
+                    <Header as='h3' textAlign='center'><em>"EEEEEEEEEEEE"</em></Header>
+                    <p className='landing-paragraph'>EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</p>
                     <Button.Group className="mrg">
                         <Button animated color='grey' as={Link} to='/about'>
                             <Button.Content visible>Read more</Button.Content>
