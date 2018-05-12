@@ -7,9 +7,13 @@ export default class AboutPage extends Component {
     render() {
         return (
             <div>
-                {/* <Divider horizontal>Or another format</Divider> */}
                 <Container text>
                     <Header as='h1'>About Evergreen</Header>
+                    <p>
+                        EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEeeeeeeeee eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                        EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+                        EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEe
+                    </p>
                     <AccordionAbout />
                 </Container>
             </div>

@@ -20,7 +20,6 @@ body {
 }
 
 .landing-page-background-specific {
-  /* background-image: url("assets/EditedWilmingtonShot.jpg"); */
    padding-top: 100px;
 }
 
@@ -65,4 +64,9 @@ body {
 
 .mrg{
   margin: 50%;
+}
+
+#schedulerButton {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
