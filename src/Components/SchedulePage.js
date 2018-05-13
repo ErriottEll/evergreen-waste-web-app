@@ -3,12 +3,13 @@ import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
 import PickupAdder from '../Components/PickupAdder';
+import axios from 'axios';
 
 BigCalendar.momentLocalizer(moment);
 
 let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k]);
 
-const myEventsList = [
+let myEventsList = [
     {
       id: 0,
       title: 'All Day Event very long title',
@@ -111,9 +112,28 @@ const myEventsList = [
   ];
 
 export default class SchedulePage extends Component {
+    state = {
+      events: []
+    }
+    componentDidMount() {
+      axios.get('http://localhost:8080', {
+        headers: {
+          // 'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+        }
+      })
+      .then(res => {
+        const events = res.data;
+        console.log(events);
+        this.setState({ events });
+      })
+    }
     render() {
         return (
             <div>
+            <ul>
+              { this.state.events.map(event => <li>{event.title}</li>)}
+            </ul>
                 <BigCalendar
                     events={myEventsList}
                     views={allViews}

@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dbsetup": "dropdb egdb && createdb egdb && psql egdb -f setupdb.sql",
+    "start": "nodemon index.js"
+  },
+  "author": "Elliott",
+  "license": "MIT",
+  "dependencies": {
+    "pg-promise": "^5.9.7",
+    "promise": "^8.0.1",
+    "restify": "^7.1.1",
+    "restify-cors-middleware": "^1.1.0",
+    "restify-errors": "^6.0.0"
+  }
+}

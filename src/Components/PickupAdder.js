@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Modal, Form, Header } from 'semantic-ui-react';
-import 'react-dates/initialize';
-import { SingleDatePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
+// import 'react-dates/initialize';
+// // import { SingleDatePicker } from 'react-dates';
+// import 'react-dates/lib/css/_datepicker.css';
 
 const pickUpOptions = [
     { key: 'yw', text: 'Yard Waste', value: 'yardwaste' },
@@ -34,17 +34,19 @@ export default class PickupAdder extends Component {
                             <Form.Select label='Pickup type' options={pickUpOptions} placeholder='Pickup type' />
                             <Form.Field>
                                 <label>Date</label>
-                                <SingleDatePicker
+                                {/* <SingleDatePicker
                                     date={this.state.date} // momentPropTypes.momentObj or null
                                     onDateChange={date => this.setState({ date })} // PropTypes.func.isRequired
                                     focused={this.state.focused} // PropTypes.bool
                                     onFocusChange={({ focused }) => this.setState({ focused })} // PropTypes.func.isRequired
-                                />
+                                /> */}
                             </Form.Field>
                             <Form.Button>Submit</Form.Button>
                         </Form>
                     </Modal.Content>
                 </Modal>
+                 {/* <p>{this.state.date} </p> */}
+                 <p>Hello world</p>
             </div>
                 )
             }
