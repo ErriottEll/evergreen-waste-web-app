@@ -116,9 +116,10 @@ export default class SchedulePage extends Component {
       events: []
     }
     componentDidMount() {
-      axios.get('http://localhost:8080', {
+      axios.get('http://localhost:8080/events', {
         headers: {
-          // 'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, PUT POST, DELETE, OPTIONS',
           'Content-Type': 'application/json',
         }
       })

@@ -29,7 +29,7 @@ class App extends Component {
               <Route path="/about" component={AboutPage} />
               <Route path="/schedule" component={SchedulePage} />
               {/*This not found bit is broke*/}
-              <Route component='NotFound' />
+              <Route component={NotFound} />
             </Switch>
           </div>
           <BaseFooter />

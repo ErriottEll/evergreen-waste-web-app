@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy": "http://localhost:8080",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dbsetup": "dropdb egdb && createdb egdb && psql egdb -f setupdb.sql",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "startPostgres": "sudo service postgresql start"
   },
   "author": "Elliott",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.3",
     "pg-promise": "^5.9.7",
     "promise": "^8.0.1",
     "restify": "^7.1.1",

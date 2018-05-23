@@ -10,13 +10,14 @@ const pickUpOptions = [
     { key: 't', text: 'Trash', value: 'trash' },
 ]
 // Temp fix for the modal that's broken in the version of SUIR I'm running https://github.com/Semantic-Org/Semantic-UI-React/issues/2558
-const inlineStyle = {
-    modal: {
-        marginTop: '0px !important',
-        marginLeft: 'auto',
-        marginRight: 'auto'
-    }
-};
+// const inlineStyle = {
+//     modal: {
+//         marginTop: '0px !important',
+//         marginLeft: 'auto',
+//         marginRight: 'auto'
+//     }
+// };
+// {/*style={inlineStyle.modal}*/}
 export default class PickupAdder extends Component {
     state = {}
 
@@ -26,7 +27,7 @@ export default class PickupAdder extends Component {
         const { value } = this.state;
         return (
             <div>
-                <Modal style={inlineStyle.modal} trigger={<Button id='schedulerButton' fluid color='green'>Schedule a pick up</Button>}>
+                <Modal  trigger={<Button id='schedulerButton' fluid color='green'>Schedule a pick up</Button>}>
                     <Modal.Header>Schedule a pick up</Modal.Header>
                     <Modal.Content>
                         {/* TODO: improve form to account for special trash pickups by popping up an additional description field and some special fields for what is being picked up */}
