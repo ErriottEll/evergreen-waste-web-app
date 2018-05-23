@@ -25,7 +25,7 @@ const server = restify.createServer({
 //5/22/2018 - Attempted to solve the issue by adding OPTIONS to the list of Access-Control-Allow-Methods... but I still get the 405 error for OPTIONS not allowed
 server.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Headers", "Origin, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, X-Response-Time, X-PINGOTHER, X-CSRF-Token, Authorization");
     res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
     if('OPTIONS' == req.method){
         console.log("HELLO: IS ANYONE HERE: IM IN THE OPTIONS REQUEST");
