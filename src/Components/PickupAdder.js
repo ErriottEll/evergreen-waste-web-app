@@ -46,8 +46,9 @@ export default class PickupAdder extends Component {
             startDate: this.state.startDate,
             endDate: this.state.endDate,
         };
+        console.log("MyEvent is: " + JSON.stringify(myEvent));
 
-        axios.post('http://localhost:8080/events', { myEvent }, headers)
+        axios.post('http://localhost:8080/events', myEvent, headers)
         .then( res => {
             console.log(res);
             console.log(res.data);

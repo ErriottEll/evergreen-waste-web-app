@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'semantic-ui-react';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
@@ -121,7 +122,8 @@ export default class SchedulePage extends Component {
       .then(res => {
         const events = res.data;
         console.log(events);
-        this.setState({ events });
+        this.setState({events});
+        console.log(this.state.events)
       })
   }
   render() {
@@ -134,10 +136,13 @@ export default class SchedulePage extends Component {
           step={60}
           showMultiDayTimes
           defaultDate={new Date()}
+          startAccessor='startdate'
+          endAccessor='enddate'
         />
         <ul>
-          {this.state.events.map(event => <li>{event.title}</li>)}
+          {this.state.events.map(event => <li key={event.id}>{event.title}</li>)}
         </ul>
+        <Button onClick={this.testState}>Test me</Button>
         <PickupAdder />
       </div>
     )
